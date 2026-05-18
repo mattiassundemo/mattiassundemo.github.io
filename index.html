@@ -10,6 +10,48 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .home-grid {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 70px;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .home-profile {
+      text-align: center;
+    }
+
+    .home-bio {
+      max-width: 720px;
+    }
+
+    .home-bio h1 {
+      margin-top: 0;
+      font-size: 34px;
+    }
+
+    .bio-lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 850px) {
+      .home-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .home-bio {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -28,70 +70,70 @@
 </header>
 
 <main class="page-section">
-  <div class="container">
-    <div class="about-grid">
 
-      <div class="profile">
-        <div class="avatar">MS</div>
+  <div class="home-grid">
 
-        <div class="portrait-title">
-          <h2>Mattias Sundemo</h2>
-          <h3>PhD Student in Environmental Management &amp; Economics</h3>
-          <h3>University of Gothenburg</h3>
-        </div>
+    <aside class="home-profile">
+      <div class="avatar">MS</div>
 
-        <ul class="network-icon" aria-label="Social links">
-          <li>
-            <a href="mailto:your.email@university.se" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/mattias-sundemo-671ab541/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/mattiassundemo" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="portrait-title">
+        <h2>Mattias Sundemo</h2>
+        <h3>PhD Student in Environmental Management &amp; Economics</h3>
+        <h3>University of Gothenburg</h3>
       </div>
 
-      <div class="biography">
-        <h1>Biography</h1>
+      <ul class="network-icon" aria-label="Social links">
+        <li>
+          <a href="mailto:your.email@university.se" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
 
-        <p class="bio-text">
-          I am a PhD student in economics at the University of Gothenburg.
-          My research interests include environmental economics, climate policy,
-          applied microeconomics, and higher education.
-        </p>
+        <li>
+          <a href="https://www.linkedin.com/in/mattias-sundemo-671ab541/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
 
-        <div class="bio-lists">
-          <div>
-            <div class="section-subheading">Interests</div>
-            <ul>
-              <li>Environmental economics</li>
-              <li>Climate policy</li>
-              <li>Applied microeconomics</li>
-              <li>Higher education</li>
-            </ul>
-          </div>
+        <li>
+          <a href="https://github.com/mattiassundemo" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
 
-          <div>
-            <div class="section-subheading">Education</div>
-            <ul>
-              <li>PhD in Economics, University of Gothenburg</li>
-            </ul>
-          </div>
+    <section class="home-bio">
+      <h1>Biography</h1>
+
+      <p class="bio-text">
+        I am a PhD student in economics at the University of Gothenburg.
+        My research interests include environmental economics, climate policy,
+        applied microeconomics, and higher education.
+      </p>
+
+      <div class="bio-lists">
+        <div>
+          <div class="section-subheading">Interests</div>
+          <ul>
+            <li>Environmental economics</li>
+            <li>Climate policy</li>
+            <li>Applied microeconomics</li>
+            <li>Higher education</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="section-subheading">Education</div>
+          <ul>
+            <li>PhD in Economics, University of Gothenburg</li>
+          </ul>
         </div>
       </div>
+    </section>
 
-    </div>
   </div>
+
 </main>
 
 <footer>
