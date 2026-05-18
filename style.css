@@ -6,11 +6,9 @@
   --background: #ffffff;
   --section-light: #f8f9fa;
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -19,20 +17,18 @@ body {
   color: var(--text);
   background: var(--background);
 }
-
 h1, h2, h3, .navbar-brand {
   font-family: "Montserrat", sans-serif;
 }
-
 a {
   color: var(--blue);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
+ 
+/* ── Navbar ── */
 .navbar {
   position: sticky;
   top: 0;
@@ -40,7 +36,6 @@ a:hover {
   background: white;
   border-bottom: 1px solid var(--border);
 }
-
 .navbar-inner {
   max-width: 1140px;
   margin: 0 auto;
@@ -49,49 +44,48 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar-brand {
   font-weight: 700;
   font-size: 18px;
   color: var(--text);
 }
-
 .navbar-brand:hover {
   color: var(--blue);
   text-decoration: none;
 }
-
 .navbar-links a {
   color: var(--text);
   margin-left: 28px;
   font-size: 15px;
 }
-
 .navbar-links a:hover {
   color: var(--blue);
   text-decoration: none;
 }
-
+ 
+/* ── Page layout ── */
 .page-section {
   padding: 80px 24px;
 }
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+ 
+/* ── Two-column grid ── */
 .about-grid {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 60px;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 70px;
   align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-
+ 
+/* ── Profile (left column) ── */
 .profile {
   text-align: center;
 }
-
 .avatar {
   width: 250px;
   height: 250px;
@@ -107,19 +101,18 @@ a:hover {
   font-weight: 700;
   color: #777;
 }
-
 .portrait-title h2 {
   font-size: 25px;
   margin: 0 0 8px;
 }
-
 .portrait-title h3 {
   font-size: 16px;
   font-weight: 400;
   color: var(--muted);
   margin: 5px 0;
 }
-
+ 
+/* ── Social icons — blue by default ── */
 .network-icon {
   list-style: none;
   padding: 0;
@@ -129,86 +122,78 @@ a:hover {
   gap: 16px;
   flex-wrap: wrap;
 }
-
 .network-icon li {
   margin: 0;
 }
-
 .network-icon a {
-  color: var(--text);
+  color: var(--blue);
   font-size: 27px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.15s;
 }
-
 .network-icon a:hover {
-  color: var(--blue);
+  opacity: 0.7;
   text-decoration: none;
 }
-
+ 
+/* ── Biography (right column) ── */
 .biography h1,
 .page-title {
   font-size: 34px;
   margin-top: 0;
   margin-bottom: 24px;
 }
-
 .bio-text {
   text-align: justify;
   max-width: 780px;
 }
-
 .bio-lists {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 45px;
   margin-top: 40px;
 }
-
 .section-subheading {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 19px;
   margin-bottom: 12px;
 }
-
 ul {
   margin-top: 0;
   padding-left: 22px;
 }
-
 li {
   margin-bottom: 8px;
 }
-
+ 
+/* ── Other pages ── */
 .content-block {
   max-width: 860px;
 }
-
 .item {
   margin-bottom: 34px;
 }
-
 .item-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 19px;
   margin-bottom: 6px;
 }
-
 .item-meta {
   color: var(--muted);
   margin-bottom: 8px;
 }
-
 .subsection-title {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   margin: 35px 0 20px;
 }
-
+ 
+/* ── Footer ── */
 footer {
   padding: 30px 24px;
   text-align: center;
@@ -216,26 +201,27 @@ footer {
   font-size: 14px;
   border-top: 1px solid var(--border);
 }
-
+ 
+/* ── Responsive ── */
 @media (max-width: 850px) {
   .navbar-inner {
     display: block;
   }
-
   .navbar-links {
     margin-top: 10px;
   }
-
   .navbar-links a {
     margin-left: 0;
     margin-right: 18px;
   }
-
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 35px;
   }
-
   .bio-lists {
     grid-template-columns: 1fr;
+  }
+  .biography {
+    max-width: 100%;
   }
 }
