@@ -90,26 +90,10 @@ a:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #f1f1f1;
   border: 1px solid var(--border);
   margin: 0 auto 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  color: #777;
-}
-.portrait-title h2 {
-  font-size: 25px;
-  margin: 0 0 8px;
-}
-.portrait-title h3 {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--muted);
-  margin: 5px 0;
+  display: block;
+  object-fit: cover;
 }
  
 /* ── Social icons — blue by default ── */
