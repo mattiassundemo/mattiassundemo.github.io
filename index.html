@@ -4,62 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mattias Sundemo</title>
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    .home-grid {
-      display: grid;
-      grid-template-columns: 320px minmax(0, 1fr);
-      gap: 70px;
-      align-items: start;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .home-profile {
-      text-align: center;
-    }
-
-    .home-bio {
-      max-width: 720px;
-    }
-
-    .home-bio h1 {
-      margin-top: 0;
-      font-size: 34px;
-    }
-
-    .bio-lists {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 45px;
-      margin-top: 35px;
-    }
-
-    @media (max-width: 850px) {
-      .home-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
-
-      .home-bio {
-        max-width: 100%;
-      }
-    }
-  </style>
 </head>
-
 <body>
-
 <header class="navbar">
   <div class="navbar-inner">
     <a class="navbar-brand" href="index.html">Mattias Sundemo</a>
-
     <nav class="navbar-links">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -68,33 +21,26 @@
     </nav>
   </div>
 </header>
-
 <main class="page-section">
-
-  <div class="home-grid">
-
-    <aside class="home-profile">
+  <div class="about-grid">
+    <aside class="profile">
       <div class="avatar">MS</div>
-
       <div class="portrait-title">
         <h2>Mattias Sundemo</h2>
         <h3>PhD Student in Environmental Management &amp; Economics</h3>
         <h3>University of Gothenburg</h3>
       </div>
-
       <ul class="network-icon" aria-label="Social links">
         <li>
           <a href="mailto:your.email@university.se" aria-label="Email">
             <i class="fas fa-envelope"></i>
           </a>
         </li>
-
         <li>
           <a href="https://www.linkedin.com/in/mattias-sundemo-671ab541/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
-
         <li>
           <a href="https://github.com/mattiassundemo" target="_blank" rel="noopener" aria-label="GitHub">
             <i class="fab fa-github"></i>
@@ -102,16 +48,13 @@
         </li>
       </ul>
     </aside>
-
-    <section class="home-bio">
+    <section class="biography">
       <h1>Biography</h1>
-
       <p class="bio-text">
         I am a PhD student in economics at the University of Gothenburg.
         My research interests include environmental economics, climate policy,
         applied microeconomics, and higher education.
       </p>
-
       <div class="bio-lists">
         <div>
           <div class="section-subheading">Interests</div>
@@ -122,7 +65,6 @@
             <li>Higher education</li>
           </ul>
         </div>
-
         <div>
           <div class="section-subheading">Education</div>
           <ul>
@@ -131,14 +73,11 @@
         </div>
       </div>
     </section>
-
   </div>
-
 </main>
-
 <footer>
   © 2026 Mattias Sundemo
 </footer>
-
 </body>
 </html>
+ 
